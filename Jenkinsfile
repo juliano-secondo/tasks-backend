@@ -57,7 +57,7 @@ pipeline{
         stage("functional Test") {
             steps {
                 dir("functional-test") {
-                    git branch: 'main', url: 'https://github.com/juliano-secondo/tasks-functional-tests'
+                    git branch: 'master', url: 'https://github.com/juliano-secondo/tasks-functional-tests'
                     sh 'mvn test'
                 }
             }
